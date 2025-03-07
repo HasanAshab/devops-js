@@ -14,9 +14,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-          with:
-            node-version: 20
-            cache: 'npm'
+        with:
+          node-version: 20
+          cache: 'npm'
       - name: install dependencies
         run: npm install
       - name: run tests
@@ -27,9 +27,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
-          with:
-            node-version: 20
-            cache: 'npm'      
+        with:
+          node-version: 20
+          cache: 'npm'      
       - name: install dependencies
         run: npm install
       - name: Run lint
